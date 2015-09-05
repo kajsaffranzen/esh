@@ -7,10 +7,25 @@
 <?php
 	
 	if($_SESSION['inloggad']==false || $_SESSION['user']=="")	{		
-		header("Location: admin.php");	}	
+		header("Location: index.html");	}	
 	include('include.inc.php');
 	db_connect(); 
+	
 
+	$query_module = mysql_query("SELECT * FROM Modules WHERE User='Linkoping' ORDER BY Module DESC "); 
+						
+	$i=0;
+	while($row = mysql_fetch_array($query_module)) 
+	{
+          $i++;
+		$Module = $row['Module'];
+		$Value = $row['Value'];
+		$Counter = $row['Counter'];
+		echo $Module;
+		echo $Value;
+		echo $Counter;
+
+	}
 	
 ?>
 <html>
