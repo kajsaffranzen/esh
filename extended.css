@@ -32,6 +32,10 @@
 	color: #fff;
 }
 
+.inlBtn{
+	size: 50%;
+}
+
 #sensorSize{
 	height: 5%;
 }

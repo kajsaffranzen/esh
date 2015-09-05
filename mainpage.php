@@ -23,8 +23,8 @@
 		$Value = $row['Value'];
 		$Counter = $row['Counter'];
 		
-		echo $Value;
-		echo $Counter;
+		//echo $Value;
+		//echo $Counter;
 
 
 	 }
@@ -70,30 +70,7 @@
 
 				<!-- Thumbnail -->
 					<section id="thumbnails">
-						<article>
-							<a class="thumbnail" href="images/Kartor/fridhem1.png" data-position="left center"><img src="images/Kartor/fridhem1.png" alt="" /></a>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/kartor/fridhem1.1.png"></a>
-							
-							<!-- adding vattendroppar -->
-							<input id="sensorSize" class="sensorType" type="image" src="images/kartor/greenDrop.png" onClick="greenSensor();"/>
-
-							<input id="sensorSize" class="sensorType2" type="image" src="images/kartor/gul.png" onClick="yellowSensor();"/>
-
-							<input id="sensorSize" class="sensorType3" type="image" src="images/kartor/red.png" onClick="redSensor();"/>
-
-
-							<div class="infoText">
-								
-								<h2 type="text" id="dryDays" >hej</h2>
-								<h2 id="rainDays">.</h2>
-							</div>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/kartor/test.png" data-position="top center"><img src="images/kartor/test.png" alt="" /></a>
-				
-						</article>
+						
 						<article>
 							<a class="thumbnail" href="images/kartor/tradgard2.png"></a>
 							

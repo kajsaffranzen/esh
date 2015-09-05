@@ -13,17 +13,19 @@
 
 				<input type="image" src="images/extended/loggin.png" onClick="showonlyone('send');"/>
 				<div class="hidden" id="send">
-				<form action="userverification.php" method="post" >
-				
-					<label> Användarnamn <input type="text" name="User" value="" /> </label> 
-					<label> Lösenord <input type="password" name="password" value="" /> </label>
-					<input type="submit" name="submit" value="Logga in!"/> 
-				
-				</form>
+					<form action="userverification.php" method="post"> 
+
+	 					<div>
+	 						<input type="text" name="User" id="demo-name" value="" placeholder="Namn" />
+	 						<input type="password" name="password" id="demo-name" value="" placeholder="Lösenord" />
+
+	 						<li><input id="lgnBtn" type="submit" name="submit" value="Logga in"/> </li>
+	 					</div>	
+					</form>
 				</div>
 				<input type="image" src="images/extended/om.png" onClick="showonlyone('aboutUs');"/>
 				<div class="hidden" id="aboutUs">
-					<p>vi är söta flickor och stiliga boys(klas exkluderat)</p>
+					<h2>En massa information om tjansten, vad som finns och vad poängen är</h2>
 				</div>
 			</ul>
 	</body>

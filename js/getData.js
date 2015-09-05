@@ -41,7 +41,7 @@ function getWeather(){
 	// console.log(data.validTime);
 
 	// var json = JSON.parse(data);
-	var rainIndex, rainValue = [];
+	// var rainIndex, rainValue = [];
 	$.ajax({
 
 		// Linköpings: 58.410807, 15.621373

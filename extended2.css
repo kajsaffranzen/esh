@@ -30,8 +30,30 @@ body{
 	
 }
 #aboutUs{
+	color: white;
 	
 }
 .hidden{
 	display: none;
+}
+
+#lgnBtn{
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+	background-color: #fff;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	margin-left: 130px;
+	text-align: center;
+}
+
+#demo-name{
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+	background-color: #fff;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	margin-left: 10px;
 }

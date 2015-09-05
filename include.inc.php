@@ -20,7 +20,7 @@ function db_connect() {
     if(!$link_id){
     	die('MySql_error' . mysql_error());
     }
-    echo "hej";
+   
     @mysql_select_db($database) or die("Error: There was a problem with the database!");
 
     return $link_id;

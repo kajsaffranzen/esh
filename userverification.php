@@ -5,8 +5,7 @@ db_connect();
 session_start();	
 $User = htmlspecialchars(mysql_real_escape_string($_POST['User']));	
 $password = htmlspecialchars(mysql_real_escape_string($_POST['password']));	
-echo $User;
-echo "hej";
+
 
 /* Hit kommer man när man försöker logga in. Här kollar vi så att man har skrivit in både lösenord och användarnamn.	
  Har man det så gör vi en slq_query med dom och kollar om man får något resultat tillbaka.	
