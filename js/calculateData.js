@@ -1,5 +1,9 @@
 var deadline = 5;
 
+var d = new Date();
+var today = d.getDate(); //return the day
+
+
 function greenSensor(){
 
 	document.getElementById('dryDays').innerHTML="GRÖN";
@@ -21,6 +25,7 @@ function yellowSensor(){
 // 4-5 dag med ca 15 mm (för greener)
 
 function redSensor(){
+
 
 	// get counter from database
 	var x = 3;

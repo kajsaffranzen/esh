@@ -36,6 +36,12 @@ function getArea(){
 function getWeather(){
 	console.log("i getWeather");
 
+	// var data = "http://opendata-download-metfcst.smhi.se/api/category/pmp1.5g/version/1/geopoint/lat/58.410807/lon/15.621373/data.json";
+	// var json = JSON.parse(data);
+	// console.log(data.validTime);
+
+	// var json = JSON.parse(data);
+	var rainIndex, rainValue = [];
 	$.ajax({
 
 		// Linköpings: 58.410807, 15.621373
@@ -47,7 +53,10 @@ function getWeather(){
 		withCredentials: true,
 		
 	}).done(function(data){
+		
 		console.log(data);
+
+
 	}).fail(function(req) {	
 		console.log("err");
 	});
