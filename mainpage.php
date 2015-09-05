@@ -5,7 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <?php
-<<<<<<< HEAD
+
 	session_start();	
 	if($_SESSION['inloggad']==false || $_SESSION['user']=="")	{		
 		header("Location: index.html");	}	
@@ -25,34 +25,14 @@
 		
 		echo $Value;
 		echo $Counter;
-=======
-	
-	// if($_SESSION['inloggad']==false || $_SESSION['user']=="")	{		
-	// 	header("Location: index.html");	}	
-	// include('include.inc.php');
-	// db_connect(); 
-	
 
-	// $query_module = mysql_query("SELECT * FROM Modules WHERE User='Linkoping' ORDER BY Module DESC "); 
-						
-	// $i=0;
-	// while($row = mysql_fetch_array($query_module)) 
-	// {
- //          $i++;
-	// 	$Module = $row['Module'];
-	// 	$Value = $row['Value'];
-	// 	$Counter = $row['Counter'];
-	// 	echo $Module;
-	// 	echo $Value;
-	// 	echo $Counter;
->>>>>>> ca6cde15aaf83cf6de9c7c659eef1d4bdbd92a70
 
-	// }
+	 }
 	
 ?>
 <html>
 	<head>
-		<title>Lens by HTML5 UP</title>
+		<title>H2infO</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -62,6 +42,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![enlldif]-->
 		
 		<script src="js/getData.js"></script>
+		<script src="js/calculateData.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -77,30 +58,40 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Lens</h1>
+						<h1 class="user">Linköpings Kommun</h1>
 						<p>Just another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-						<ul class="icons">
+						<!-- <ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
 							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>
+						</ul> -->
 					</header>
 
 				<!-- Thumbnail -->
 					<section id="thumbnails">
 						<article>
-							<a class="thumbnail" href="images/Kartor/fridhem1.png" data-position="left center"><img src="images/Kartor/fridhem1.1.png" alt="" /></a>
+							<a class="thumbnail" href="images/Kartor/fridhem1.png" data-position="left center"><img src="images/Kartor/fridhem1.png" alt="" /></a>
 						</article>
 						<article>
 							<a class="thumbnail" href="images/kartor/fridhem1.1.png"></a>
+							
+							<!-- adding vattendroppar -->
+							<input id="sensorSize" class="sensorType" type="image" src="images/kartor/greenDrop.png" onClick="greenSensor();"/>
+
+							<input id="sensorSize" class="sensorType2" type="image" src="images/kartor/gul.png" onClick="yellowSensor();"/>
+
+							<input id="sensorSize" class="sensorType3" type="image" src="images/kartor/red.png" onClick="redSensor();"/>
+
+
 							<div class="infoText">
-								<h2>Vivamus convallis libero</h2>
-								<p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
+								
+								<h2 type="text" id="dryDays" >hej</h2>
+								<h2 id="rainDays">.</h2>
 							</div>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/kartor/tradgard1.png" data-position="top center"><img src="images/kartor/tradgard1.png" alt="" /></a>
+							<a class="thumbnail" href="images/kartor/test.png" data-position="top center"><img src="images/kartor/test.png" alt="" /></a>
 				
 						</article>
 						<article>
