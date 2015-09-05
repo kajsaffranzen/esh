@@ -1,0 +1,21 @@
+body{
+
+	background-image: url("images/extended/landing.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	 background-size: cover;
+	 background-color: #464646;
+
+}
+
+.loginBtn{
+
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#btn{
+	width: 100%;
+}
