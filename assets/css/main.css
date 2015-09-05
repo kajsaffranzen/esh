@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://www.google.com/fonts#ChoosePlace:select/Collection:Josefin+Slab");
 
 /*
 	Lens by HTML5 UP
@@ -719,7 +719,7 @@
 		top: 0;
 		width: 22.5em;
 		height: 100%;
-		background: #fff;
+		background: black;
 		outline: 0;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -787,7 +787,7 @@
 				-ms-transition: opacity 0.5s ease, visibility 0.5s;
 				transition: opacity 0.5s ease, visibility 0.5s;
 				width: 100%;
-				background: #fff;
+				background: ;
 				text-align: center;
 			}
 
@@ -849,6 +849,9 @@
 		flex-wrap: wrap;
 		padding: 0 0.75em;
 	}
+		#thumbnails article .thumbnail#hidden{
+			display: none;
+		}
 
 		#thumbnails article {
 			position: relative;
@@ -909,6 +912,7 @@
 			}
 
 		}
+
 
 /* Viewer */
 
@@ -993,7 +997,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			position: absolute;
+			position: absolute;  /*FIXME*/
 			top: 0;
 			left: 0;
 			width: 100%;
