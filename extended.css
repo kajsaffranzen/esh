@@ -1,17 +1,6 @@
 /*@import url(font-awesome.min.css);*/
 /*@import url("https://www.google.com/fonts#ChoosePlace:select/Collection:Josefin+Slab");*/
 
-body{
-
-	background-image: url("images/extended/landing.png");
-	background-position: center center;
-	background-rcepeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #464646;
-
-}
-
 .loginBtn{
 
 	position: absolute;

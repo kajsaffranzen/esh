@@ -1,0 +1,37 @@
+body{
+
+	background-image: url("images/extended/landing.png");
+	background-position: center center;
+	background-rcepeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+
+}
+
+.loginBtn{
+
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#btn{
+	width: 100%;
+}
+
+.infoText{
+	font-size: 30px;
+	margin-bottom: 30%;
+	margin-left: 30%;
+}
+
+#send{
+	
+}
+#aboutUs{
+	
+}
+.hidden{
+	display: none;
+}
