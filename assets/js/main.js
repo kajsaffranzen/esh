@@ -250,7 +250,7 @@ var main = (function($) { var _ = {
 								delta = 50;
 
 						// Swipe left (next).
-							if ( (diffY < boundary && diffY > (-1 * boundary)) && (diffX > delta) )
+							if ( (diffY < boundary && diffY > (-1 * boundary)) && (diffX > delta) ) 
 								_.next();
 
 						// Swipe right (previous).
@@ -347,7 +347,10 @@ var main = (function($) { var _ = {
 				});
 
 		// Nav.
+		// FIXME, lägg till en annan funktion som ändrar till vår bild istället
 			_.$navNext.on('click', function() {
+
+				// document.getElementById("img1").src = "images/fulls/landingpage.jpg";
 				_.next();
 			});
 
@@ -416,15 +419,19 @@ var main = (function($) { var _ = {
 						$thumbnail = $this.children('.thumbnail'),
 						s;
 
+					var urlName = "images/kartor/fridhem1"+.1+".png"
+
 					// Slide object.
 						s = {
 							$parent: $this,
 							$slide: null,
 							$slideImage: null,
 							$slideCaption: null,
-							url: $thumbnail.attr('href'),
+							url: $thumbnail.attr('href'),  //ändra url här  "images/kartor/fridhem1.png"
 							loaded: false
 						};
+
+
 
 					// Parent.
 						$this.attr('tabIndex', '-1');
@@ -642,20 +649,28 @@ var main = (function($) { var _ = {
 	},
 
 	/**
-	 * Switches to the next slide.
+	 * Switches to the next slide. FIXME
 	 */
 	next: function() {
 
 		// Calculate new index.
 			var i, c = _.current, l = _.slides.length;
 
+			console.log("c: " + c);
+			// console.log("i: " + i);
+			console.log("l: " + l);
 			if (c >= l - 1)
 				i = 0;
 			else
 				i = c + 1;
 
+			// if(c%2 != 0) _.switchTo(i);
+			// else i = 0; 
+				
+
 		// Switch.
-			_.switchTo(i);
+		_.switchTo(i);
+			
 
 	},
 
