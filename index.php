@@ -5,8 +5,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <?php
+	
+	if($_SESSION['inloggad']==false || $_SESSION['user']=="")	{		
+		header("Location: admin.php");	}	
 	include('include.inc.php');
 	db_connect(); 
+
 	
 ?>
 <html>
