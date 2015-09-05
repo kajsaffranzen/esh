@@ -8,10 +8,14 @@
 		<script src="js/login.js"></script>
 	</head>
 	<body>
+			<ul class="actions">
+				<li><input id="Btn" type="image" src="images/extended/loggin.png" onClick="showonlyone('send');"/></li>
 
-			<ul class="loginBtn">
-
-				<input type="image" src="images/extended/loggin.png" onClick="showonlyone('send');"/>
+			
+				<li><input id="Btn" type="image" src="images/extended/om.png" onClick=""/></i>
+				<div class="hidden" id="aboutUs">
+					<h2>En massa information om tjansten, vad som finns och vad poängen är</h2>
+				</div>
 				<div class="hidden" id="send">
 					<form action="userverification.php" method="post"> 
 
@@ -22,10 +26,6 @@
 	 						<li><input id="lgnBtn" type="submit" name="submit" value="Logga in"/> </li>
 	 					</div>	
 					</form>
-				</div>
-				<input type="image" src="images/extended/om.png" onClick="showonlyone('aboutUs');"/>
-				<div class="hidden" id="aboutUs">
-					<h2>En massa information om tjansten, vad som finns och vad poängen är</h2>
 				</div>
 			</ul>
 	</body>
