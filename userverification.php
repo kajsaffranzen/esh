@@ -19,19 +19,19 @@ $password = htmlspecialchars(mysql_real_escape_string($_POST['password']));
   			$_SESSION['user']="$User";            
   					            
 
-  			header("Location: index.php");			    
+  			header("Location: mainpage.php");			    
   					
   		}		
   		else		{			
   			$_SESSION['inloggad']="nosuchuser";			
 
 
-  			//header("Location: login.php");		
+  			header("Location: index.html");		
   		}	
   	}	
   	else	
   	{			
   		$_SESSION['inloggad']="fillAllFields";		
       
-  		header("Location: login.php");	
+  		header("Location: index.html");	
     }?>
