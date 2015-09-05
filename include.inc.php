@@ -8,16 +8,19 @@
 
 function db_connect() {
 
-    $host     = "klaslofstedt.se.mysql"; 
+   $host     = "red4media.com"; 
 
-    $user     = "klaslofstedt_se"; 
+    $user     = "redmedia_klaslof"; 
 
-    $password = "AJCMpp23"; 
+    $password = "eternal22"; 
 
-    $database = "klaslofstedt_se"; 
+    $database = "redmedia_klaslofstedt_se"; 
 
-    $link_id = @mysql_connect($host, $user, $password) or die("Error: Could not contact the database server!");
-
+    $link_id = @mysql_connect($host, $user, $password);
+    if(!$link_id){
+    	die('MySql_error' . mysql_error());
+    }
+    echo "hej";
     @mysql_select_db($database) or die("Error: There was a problem with the database!");
 
     return $link_id;

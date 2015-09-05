@@ -1,27 +1,27 @@
-<!DOCTYPE HTML>
+
 <!--
 	Lens by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <?php
-	
+	session_start();	
 	if($_SESSION['inloggad']==false || $_SESSION['user']=="")	{		
 		header("Location: index.html");	}	
 	include('include.inc.php');
 	db_connect(); 
 	
 
-	$query_module = mysql_query("SELECT * FROM Modules WHERE User='Linkoping' ORDER BY Module DESC "); 
+	$query_module = mysql_query("SELECT * FROM Modules WHERE User='Linkoping'"); 
 						
 	$i=0;
 	while($row = mysql_fetch_array($query_module)) 
 	{
           $i++;
-		$Module = $row['Module'];
+		
 		$Value = $row['Value'];
 		$Counter = $row['Counter'];
-		echo $Module;
+		
 		echo $Value;
 		echo $Counter;
 
