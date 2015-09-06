@@ -23,7 +23,7 @@ function calculateColor(current, counter, value){
 	theCurrent = current;
 	var source = "images/kartor/" + color + ".png";
 	console.log(source);
-	document.getElementById('sensorSize').src = source;
+	document.getElementById('sensorSize1').src = source;
 
 	// return en color
 	return color;
@@ -36,7 +36,7 @@ function sensorResult(color){
 		// kollar om det är sol snart , 
 		// om det är varmt + sol närmsta 4 dagarna, kolla igenom inom 4 dagar
 		// om det inte är varmt + sol närmsta 4 dagarna, kolla igenom inom 5 dagar
-		document.getElementById('rainDays').innerHTML = "Det kommer att vara fint väder de närmaste dagarna, så återkom om två dygn igen."	
+		document.getElementById('dryDays').innerHTML = "Det kommer att vara fint väder de närmaste dagarna, så återkom om två dygn igen."	
 	}
 
 	else if(color == "yellow"){

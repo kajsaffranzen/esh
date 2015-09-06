@@ -36,7 +36,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<!--link rel="stylesheet" href="extended.css" /-->
+		<link rel="stylesheet" href="extended.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![enlldif]-->
@@ -68,20 +68,42 @@
 
 				<!-- Thumbnail -->
 						<section id="thumbnails">
-						<!-- Fridhems parken -->
+						<!-- VÄXTEN -->
 						<article>
-							<a class="thumbnail" href="images/kartor/fridhem1.png" data-position="left center"><img src="images/kartor/fridhem1.png" alt="" /></a>
+							<a class="thumbnail" href="images/kartor/vaxt1.png" data-position="left center"><img src="images/kartor/vaxt1.png" alt="" /></a>
 						</article>
 						<article>
-							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img id="hidden1" src="images/kartor/fridhem1.1.png" alt="" /></a>
+							<a  id="hidden" class="thumbnail" href="images/kartor/vaxt2.png"><img id="hidden1" src="images/kartor/vaxt2.png" alt="" /></a>
 							
-								<img id="sensorSize" class="sensorType" src="images/kartor/green.png" onClick="sensorResult(color);">
+								<img id="sensorSize1" class="sensorType" src="images/kartor/green.png" onClick="sensorResult(color);">
 								<!-- <img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="sensorResult(color);"> -->
 								<!-- <img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="sensorResult(color);"> -->
 
 							<div class ="infoText">
-								<h2 type="text" id="dryDays" >hej</h2>
+								<h2 type="text" id="dryDays" ></h2>
 								<h2 type="text" id="rainDays"></h2>
+							</div>
+						</article>
+
+						<!-- Fridhems parken -->
+						<article>
+							<a class="thumbnail" href="images/kartor/ulrika1.png" data-position="left center"><img src="images/kartor/ulrika1.png" alt="" /></a>
+						</article>
+						<article>
+							<a  id="hidden" class="thumbnail" href="images/kartor/ulrika2.png"><img id="hidden1" src="images/kartor/ulrika2.png" alt="" /></a>
+							
+								<div class="sensorType">
+									<img  src="images/kartor/green.png" onClick="sensorResult(green1);">
+								</div>
+								<div class="sensorType2">
+									<img src="images/kartor/gul.png" onClick="sensorResult(1yellow1);">
+								</div>
+								
+								<!-- <img class="sensorType3" src="images/kartor/red.png" onClick="sensorResult(red1);"> -->
+
+							<div class ="infoText">
+								<h2 type="text" id="dryDays">Du har tre sensorer på detta område.</h2>
+								<h2 type="text" id="rainDays">Dagense väer är</h2>
 							</div>
 						</article>
 						
@@ -92,51 +114,22 @@
 						<article>
 							<a id="hidden" class="thumbnail" href="images/kartor/tradgard2.png"><img src="images/kartor/tradgard2.png" alt="" /></a>
 							<div class ="infoText">
-								<h2 type="text" id="dryDays" >hej</h2>
+								<h2 type="text" id="dryDays" ></h2>
 								<h2 type="text" id="rainDays"></h2>
 							</div>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/06.jpg" alt="" /></a>
+							<a class="thumbnail" href="images/kartor/test1.png" data-position="top center"><img src="images/kartor/test1.png" alt="" /></a>
 							
 							<h2>Nullam vitae nunc vulputate</h2>
 							<p>In pellentesque cursus velit id posuere. Donec vehicula nulla.</p>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" /></a>
+							<a class="thumbnail" href="images/kartor/test2.png"><img src="images/kartor/test2.png" alt="" /></a>
 							<h2>Phasellus magna faucibus</h2>
 							<p>Nulla dignissim libero maximus tellus varius dictum ut posuere magna.</p>
 						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/07.jpg"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Proin quis mauris</h2>
-							<p>Etiam ultricies, lorem quis efficitur porttitor, facilisis ante orci urna.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/08.jpg"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Gravida quis varius enim</h2>
-							<p>Nunc egestas congue lorem. Nullam dictum placerat ex sapien tortor mattis.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/09.jpg"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Morbi eget vitae adipiscing</h2>
-							<p>In quis vulputate dui. Maecenas metus elit, dictum praesent lacinia lacus.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/10.jpg"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Habitant tristique senectus</h2>
-							<p>Vestibulum ante ipsum primis in faucibus orci luctus ac tincidunt dolor.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/11.jpg"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Pharetra ex non faucibus</h2>
-							<p>Ut sed magna euismod leo laoreet congue. Fusce congue enim ultricies.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/12.jpg"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Mattis lorem sodales</h2>
-							<p>Feugiat auctor leo massa, nec vestibulum nisl erat faucibus, rutrum nulla.</p>
-						</article>
+						
 					</section>
 
 				<!-- Footer -->
@@ -154,6 +147,10 @@
 				var color = calculateColor(<?php echo $Current?>, <?php echo $Counter?>, <?php echo $Value ?>);
 				
 				console.log(color);
+
+				var green1= "green";
+				var yellow1 = "yellow";
+				var red1 = "red";
 			
 
 			</script>
