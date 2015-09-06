@@ -31,7 +31,11 @@
 .user{
 	color: #fff;
 }
+#smaller{
 
+	width: 90%;
+	height: 90%;
+}
 
 
 #sensorSize{

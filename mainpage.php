@@ -68,10 +68,7 @@
 						</ul> -->
 					</header>
 
-				<script>
-					var color = calculateColor();   //<?php echo Counter ?>
-					console.log("i html: " + color);
-				</script>
+				
 
 				<!-- Thumbnail -->
 						<section id="thumbnails">
@@ -80,9 +77,9 @@
 							<a class="thumbnail" href="images/kartor/fridhem1.png" data-position="left center"><img src="images/kartor/fridhem1.png" alt="" /></a>
 						</article>
 						<article>
-							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img src="images/kartor/fridhem1.1.png" alt="" /></a>
+							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img id="hidden1" src="images/kartor/fridhem1.1.png" alt="" /></a>
 							
-								<img id="sensorSize" class="sensorType" src="images/kartor/greenDrop.png" onClick="sensorResult(color);">
+								<img id="sensorSize" class="sensorType" src="images/kartor/green.png" onClick="sensorResult(color);">
 								<!-- <img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="sensorResult(color);"> -->
 								<!-- <img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="sensorResult(color);"> -->
 
@@ -97,9 +94,11 @@
 							<a class="thumbnail" href="images/kartor/tradgard1.png" data-position="top center"><img src="images/kartor/tradgard1.png" alt="" /></a>
 						</article>
 						<article>
-							<a id="hidden" class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Donec maximus nisi eget</h2>
-							<p>Tristique in nulla vel congue. Sed sociis natoque parturient nascetur.</p>
+							<a id="hidden" class="thumbnail" href="images/kartor/tradgard2.png"><img src="images/kartor/tradgard2.png" alt="" /></a>
+							<div class ="infoText">
+								<h2 type="text" id="dryDays" >hej</h2>
+								<h2 type="text" id="rainDays"></h2>
+							</div>
 						</article>
 						<article>
 							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
@@ -152,6 +151,11 @@
 					</footer>
 
 			</div>
+
+			<script>
+					var color = calculateColor();   //<?php echo Counter ?>
+					// console.log("i html: " + color);
+				</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

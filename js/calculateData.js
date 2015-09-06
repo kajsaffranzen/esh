@@ -9,7 +9,7 @@ var today = d.getDate(); //return the day
 function calculateColor(counter){
 
 	// ändra src på ALLA drop-bildern
-	// document.getElementById("img1").src = "images/fulls/landingpage.jpg";
+	document.getElementById('sensorSize').src = "images/fulls/landingpage.jpg";
 
 	theCounter = 3;
 	theCurrent = 13.2;

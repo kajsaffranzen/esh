@@ -419,7 +419,7 @@ var main = (function($) { var _ = {
 						$thumbnail = $this.children('.thumbnail'),
 						s;
 
-					var urlName = "images/kartor/fridhem1"+.1+".png"
+					// var urlName = "images/kartor/fridhem1"+.1+".png"
 
 					// Slide object.
 						s = {
