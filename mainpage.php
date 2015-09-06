@@ -69,7 +69,7 @@
 					</header>
 
 				<script>
-					var color = calculateColor();
+					var color = calculateColor();   //<?php echo Counter ?>
 					console.log("i html: " + color);
 				</script>
 
@@ -82,15 +82,16 @@
 						<article>
 							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img src="images/kartor/fridhem1.1.png" alt="" /></a>
 							
-								<img id="sensorSize" class="sensorType" src="images/kartor/greenDrop.png" onClick="greenSensor();">
-								<!-- <img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="yellowSensor();"> -->
-								<!-- <img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="redSensor();"> -->
+								<img id="sensorSize" class="sensorType" src="images/kartor/greenDrop.png" onClick="sensorResult(color);">
+								<!-- <img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="sensorResult(color);"> -->
+								<!-- <img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="sensorResult(color);"> -->
 
 							<div class ="infoText">
 								<h2 type="text" id="dryDays" >hej</h2>
-								<p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
+								<h2 type="text" id="rainDays"></h2>
 							</div>
 						</article>
+						
 						<!-- Tradgårdsföreningen -->
 						<article>
 							<a class="thumbnail" href="images/kartor/tradgard1.png" data-position="top center"><img src="images/kartor/tradgard1.png" alt="" /></a>
