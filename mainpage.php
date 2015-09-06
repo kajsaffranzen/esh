@@ -36,7 +36,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="extended.css" />
+		<!--link rel="stylesheet" href="extended.css" /-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![enlldif]-->
@@ -68,11 +68,6 @@
 						</ul> -->
 					</header>
 
-				<script>
-					var color = calculateColor();
-					console.log("i html: " + color);
-				</script>
-
 				<!-- Thumbnail -->
 						<section id="thumbnails">
 						<!-- Fridhems parken -->
@@ -82,9 +77,9 @@
 						<article>
 							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img src="images/kartor/fridhem1.1.png" alt="" /></a>
 							
-								<img id="sensorSize" class="sensorType" src="images/kartor/greenDrop.png" onClick="greenSensor();">
-								<!-- <img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="yellowSensor();"> -->
-								<!-- <img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="redSensor();"> -->
+								<img id="sensorSize" class="sensorType" src="images/kartor/greenDrop.png" onClick="calculatSensor(color);">
+								<!--img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="yellowSensor();">
+								<img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="redSensor();"-->
 
 							<div class ="infoText">
 								<h2 type="text" id="dryDays" >hej</h2>
