@@ -3,6 +3,10 @@ var deadline = 5;
 var d = new Date();
 var today = d.getDate(); //return the day
 
+function calculateColor(counter, current){
+
+	console.log(current, counter);
+}
 
 function greenSensor(){
 

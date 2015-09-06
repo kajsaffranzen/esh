@@ -22,9 +22,9 @@
 		
 		$Value = $row['Value'];
 		$Counter = $row['Counter'];
+		$Current = $row['Current'];
 		
-		//echo $Value;
-		//echo $Counter;
+		
 
 
 	 }
@@ -80,7 +80,7 @@
 							</div>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
+							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="calculateColor(5,7)" alt="" /></a>
 							
 						</article>
 						<article>
