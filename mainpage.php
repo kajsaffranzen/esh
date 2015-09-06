@@ -70,24 +70,34 @@
 
 				<!-- Thumbnail -->
 						<section id="thumbnails">
+						<!-- Fridhems parken -->
 						<article>
 							<a class="thumbnail" href="images/kartor/fridhem1.png" data-position="left center"><img src="images/kartor/fridhem1.png" alt="" /></a>
 						</article>
 						<article>
 							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img src="images/kartor/fridhem1.1.png" alt="" /></a>
-							<h2>Vivamus convallis libero</h2>
-							<p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
+							
+								<img id="sensorSize" class="sensorType" src="images/kartor/greenDrop.png" onClick="greenSensor();">
+								<img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="yellowSensor();">
+								<img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="redSensor();">
+
+							<div class ="infoText">
+								<h2 type="text" id="dryDays" >hej</h2>
+								<p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
+							</div>
 						</article>
+						<!-- Tradgårdsföreningen -->
 						<article>
 							<a class="thumbnail" href="images/kartor/tradgard1.png" data-position="top center"><img src="images/kartor/tradgard1.png" alt="" /></a>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<a id="hidden" class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
 							<h2>Donec maximus nisi eget</h2>
 							<p>Tristique in nulla vel congue. Sed sociis natoque parturient nascetur.</p>
 						</article>
 						<article>
 							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
+							
 							<h2>Nullam vitae nunc vulputate</h2>
 							<p>In pellentesque cursus velit id posuere. Donec vehicula nulla.</p>
 						</article>
