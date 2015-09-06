@@ -68,6 +68,11 @@
 						</ul> -->
 					</header>
 
+				<script>
+					var color = calculateColor();
+					console.log("i html: " + color);
+				</script>
+
 				<!-- Thumbnail -->
 						<section id="thumbnails">
 						<!-- Fridhems parken -->
@@ -78,8 +83,8 @@
 							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img src="images/kartor/fridhem1.1.png" alt="" /></a>
 							
 								<img id="sensorSize" class="sensorType" src="images/kartor/greenDrop.png" onClick="greenSensor();">
-								<img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="yellowSensor();">
-								<img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="redSensor();">
+								<!-- <img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="yellowSensor();"> -->
+								<!-- <img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="redSensor();"> -->
 
 							<div class ="infoText">
 								<h2 type="text" id="dryDays" >hej</h2>

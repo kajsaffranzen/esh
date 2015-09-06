@@ -3,6 +3,15 @@ var deadline = 5;
 var d = new Date();
 var today = d.getDate(); //return the day
 
+function calculateColor(){
+
+	// ändra src på dropp-bildern
+
+	var color = "green";
+	// return en color
+	return color;
+}
+
 
 function greenSensor(){
 
