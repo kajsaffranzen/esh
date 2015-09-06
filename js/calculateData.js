@@ -6,14 +6,25 @@ var theCurrent;   //fuktighetsvärdet
 var d = new Date();
 var today = d.getDate(); //return the day
 
-function calculateColor(counter){
+function calculateColor(current, counter, value){
 
-	// ändra src på ALLA drop-bildern
-	document.getElementById('sensorSize').src = "images/fulls/landingpage.jpg";
+	// ändra src på dropp-bildern
+	if(counter < 5 || current > value){
+	color = "green";
+	}
+	else if(counter >= 5 || counter < 10) {
+	color = "yellow";
+	}
+	else	{
+	 color = "red";
+	}
 
-	theCounter = 3;
-	theCurrent = 13.2;
-	var color = "green";
+	theCounter = counter;
+	theCurrent = current;
+	var source = "images/kartor/" + color + ".png";
+	console.log(source);
+	document.getElementById('sensorSize').src = source;
+
 	// return en color
 	return color;
 }
@@ -22,17 +33,13 @@ function sensorResult(color){
 	console.log("i sensorResult: " + theCounter);
 	
 	if(color == "green"){
-
-		document.getElementById('dryDays').innerHTML="Det behövs inte vattnas!";
-
 		// kollar om det är sol snart , 
 		// om det är varmt + sol närmsta 4 dagarna, kolla igenom inom 4 dagar
 		// om det inte är varmt + sol närmsta 4 dagarna, kolla igenom inom 5 dagar
-		document.getElementById('rainDays').innerHTML = "Det kommer att vara fint väder de närmaste dagarna, så återkom om två dygn igen.";
-
+		document.getElementById('rainDays').innerHTML = "Det kommer att vara fint väder de närmaste dagarna, så återkom om två dygn igen."	
 	}
+
 	else if(color == "yellow"){
-		document.getElementById('dryDays').innerHTML="Det behövs inte vattnas just nu.";
 
 		// kollar om det är sol snart , 
 		// om det är varmt + sol närmsta 4 dagarna, kolla igenom inom 4 dagar
@@ -44,6 +51,8 @@ function sensorResult(color){
 		document.getElementById('rainDays').innerHTML = "Det kommer inte regna inom de närmaste dagara, återkom om några dagar igen.";
 	}
 
+	else
+
 	// case röd
 	// jämföra hur många dagar som har gått och hur många dagar som är kvar
 	// 4-5 dag med ca 15 mm (för greener)
@@ -52,10 +61,11 @@ function sensorResult(color){
 	var remainingTime = deadline - theCounter;
 
 	if(remainingTime < 5) console.log("du kan vänta, vattna om " + remainingTime + "dagar");
-	else
-		console.log("Du beövde vattna igår din jävel");
+	
+		
 
-	document.getElementById('dryDays').innerHTML= remainingTime.toString();
+	document.getElementById('dryDays').innerHTML= "du behöver inte vattna förrens " + remainingTime + "dagar";
+
 
 	// calculate the rainDays, närmaste dagen till regn
 
@@ -64,6 +74,7 @@ function sensorResult(color){
 
 	// om ej, behövs ej vattnas då det regnar
 	document.getElementById('rainDays').innerHTML = "Det kommer att regna om " + rainDay + " dag, så ni behöver inte vattnas";
+
 
 }
 

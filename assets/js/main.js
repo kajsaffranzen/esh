@@ -659,6 +659,8 @@ var main = (function($) { var _ = {
 			console.log("c: " + c);
 			// console.log("i: " + i);
 			console.log("l: " + l);
+			
+
 			if (c >= l - 1)
 				i = 0;
 			else

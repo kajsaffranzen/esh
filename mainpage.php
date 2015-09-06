@@ -22,9 +22,9 @@
 		
 		$Value = $row['Value'];
 		$Counter = $row['Counter'];
+		$Current = $row['Current'];
 		
-		//echo $Value;
-		//echo $Counter;
+		
 
 
 	 }
@@ -36,22 +36,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="extended.css" />
+		<!--link rel="stylesheet" href="extended.css" /-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![enlldif]-->
 		
-		<script src="js/getData.js"></script>
-		<script src="js/calculateData.js"></script>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<script src="js/getData.js"></script>
+		<script src="js/calculateData.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading-0 is-loading-1 is-loading-2">
 
-		<script>
-			getArea();
-			getWeather();
-		</script>
+		
 
 		<!-- Main -->
 			<div id="main">
@@ -67,8 +65,6 @@
 							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul> -->
 					</header>
-
-				
 
 				<!-- Thumbnail -->
 						<section id="thumbnails">
@@ -101,7 +97,7 @@
 							</div>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
+							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/06.jpg" alt="" /></a>
 							
 							<h2>Nullam vitae nunc vulputate</h2>
 							<p>In pellentesque cursus velit id posuere. Donec vehicula nulla.</p>
@@ -153,15 +149,21 @@
 			</div>
 
 			<script>
-					var color = calculateColor();   //<?php echo Counter ?>
-					// console.log("i html: " + color);
-				</script>
+			//getArea();
+			// getWeather();
+				var color = calculateColor(<?php echo $Current?>, <?php echo $Counter?>, <?php echo $Value ?>);
+				
+				console.log(color);
+			
+
+			</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+	
 
 	</body>
 
