@@ -6,11 +6,13 @@ var today = d.getDate(); //return the day
 
 function calculateColor(current, counter, value){
 
+	var rain = weather();
+
 	// ändra src på dropp-bildern
-	if(counter < 5 || current > value){
+	if(counter < 5 || current > value || rain < 3){
 	color = "green";
 	}
-	else if(counter >= 5 || counter < 10) {
+	else if(counter >= 5 || counter < 10 ) {
 	color = "yellow";
 	}
 	else	{
@@ -60,6 +62,20 @@ function redSensor(){
 		console.log("Du beövde vattna igår din jävel");
 
 	document.getElementById('dryDays').innerHTML= remainingTime.toString();
+
+}
+
+function weather() {
+	var weather = [false, false, false, false, false, false, false, false, false, true, false];
+
+	var counter = 0;
+	var test = false;
+	while(test = false) {
+		test = weather[counter];
+		counter++;
+
+	}
+	return counter;
 
 }
 

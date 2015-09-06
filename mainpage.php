@@ -147,7 +147,7 @@
 
 			<script>
 			//getArea();
-			getWeather();
+			//getWeather();
 			var color = calculateColor(<?php echo $Current?>, <?php echo $Counter?>, <?php echo $Value ?>);
 			
 			console.log(color);
