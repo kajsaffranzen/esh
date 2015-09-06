@@ -24,10 +24,7 @@
 		$Counter = $row['Counter'];
 		$Current = $row['Current'];
 		
-		
-
-
-	 }
+	}
 	
 ?>
 <html>
@@ -38,6 +35,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="extended.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.google.com/fonts#ChoosePlace:select/Collection:Josefin+Slab" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![enlldif]-->
 		
@@ -49,7 +47,11 @@
 	</head>
 	<body class="is-loading-0 is-loading-1 is-loading-2">
 
-		
+	<script>
+	var green1= "green";
+				var yellow1 = "yellow";
+				var red1 = "red";
+	</script>
 
 		<!-- Main -->
 			<div id="main">
@@ -57,78 +59,109 @@
 				<!-- Header -->
 					<header id="header">
 						<h1 class="user">Linköpings Kommun</h1>
-						<p>Just another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-						<!-- <ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul> -->
 					</header>
 
 				<!-- Thumbnail -->
 						<section id="thumbnails">
 						<!-- VÄXTEN -->
 						<article>
-							<a class="thumbnail" href="images/kartor/vaxt1.png" data-position="left center"><img src="images/kartor/vaxt1.png" alt="" /></a>
+							<a class="thumbnail" href="images/new/vaxt1.png" data-position="left center"><img src="images/new/vaxt1.png" alt="" /></a>
 						</article>
 						<article>
-							<a  id="hidden" class="thumbnail" href="images/kartor/vaxt2.png"><img id="hidden1" src="images/kartor/vaxt2.png" alt="" /></a>
+							<a  id="hidden" class="thumbnail" href="images/new/vaxt2.png"><img id="hidden1" src="images/new/vaxt2.png" alt="" /></a>
 							
 								<img id="sensorSize1" class="sensorType" src="images/kartor/green.png" onClick="sensorResult(color);">
-								<!-- <img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="sensorResult(color);"> -->
-								<!-- <img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="sensorResult(color);"> -->
 
 							<div class ="infoText">
-								<h2 type="text" id="dryDays" ></h2>
-								<h2 type="text" id="rainDays"></h2>
+								<h2 type="text" id="dryDays" >Du har en sensor på detta området.</h2>
+								<h2 type="text" id="rainDays">För mer information, klicka på en sensor.</h2>
 							</div>
 						</article>
 
 						<!-- Fridhems parken -->
 						<article>
-							<a class="thumbnail" href="images/kartor/ulrika1.png" data-position="left center"><img src="images/kartor/ulrika1.png" alt="" /></a>
+							<a class="thumbnail" href="images/new/frid1.png" data-position="left center"><img src="images/new/frid1.png" alt="" /></a>
 						</article>
 						<article>
-							<a  id="hidden" class="thumbnail" href="images/kartor/ulrika2.png"><img id="hidden1" src="images/kartor/ulrika2.png" alt="" /></a>
+							<a  id="hidden" class="thumbnail" href="images/new/frid2.png"><img id="hidden1" src="images/new/frid2.png" alt="" /></a>
 							
 								<div class="sensorType">
-									<img  src="images/kartor/green.png" onClick="sensorResult(green1);">
+									<img src="images/kartor/greenHEY.png" onClick="sensorResult(green1);">
 								</div>
 								<div class="sensorType2">
-									<img src="images/kartor/gul.png" onClick="sensorResult(1yellow1);">
+									<img src="images/kartor/gulHEY.png" onClick="sensorResult(yellow1);">
+								</div>
+								<div class="sensorType3">
+									<img src="images/kartor/red1.png" onClick="sensorResult(red1);">
 								</div>
 								
 								<!-- <img class="sensorType3" src="images/kartor/red.png" onClick="sensorResult(red1);"> -->
 
 							<div class ="infoText">
-								<h2 type="text" id="dryDays">Du har tre sensorer på detta område.</h2>
-								<h2 type="text" id="rainDays">Dagense väer är</h2>
+								<h2 type="text" id="dryDays" >Du har tre sensor på detta området.</h2>
+								<h2 type="text" id="rainDays">För mer information, klicka på en sensor.</h2>
 							</div>
 						</article>
 						
 						<!-- Tradgårdsföreningen -->
 						<article>
-							<a class="thumbnail" href="images/kartor/tradgard1.png" data-position="top center"><img src="images/kartor/tradgard1.png" alt="" /></a>
+							<a class="thumbnail" href="images/new/berg1.png" data-position="top center"><img src="images/new/berg1.png" alt="" /></a>
 						</article>
 						<article>
-							<a id="hidden" class="thumbnail" href="images/kartor/tradgard2.png"><img src="images/kartor/tradgard2.png" alt="" /></a>
+							<a id="hidden" class="thumbnail" href="images/new/berg2.png"><img src="images/new/berg2.png" alt="" /></a>
 							<div class ="infoText">
-								<h2 type="text" id="dryDays" ></h2>
-								<h2 type="text" id="rainDays"></h2>
+								<h2 type="text" id="dryDays1" >Du har två sensor på detta området.</h2>
+								<h2 type="text" id="rainDays1">För mer information, klicka på en sensor.</h2>
+							</div>
+						</article>
+
+						<article>
+							<a class="thumbnail" href="images/new/orta1.png" data-position="top center"><img src="images/new/orta1.png" alt="" /></a>
+							
+						</article>
+						<article>
+							<a id="hidden" class="thumbnail" href="images/new/orta2.png"><img src="images/new/orta2.png" alt="" /></a>
+							<div class ="infoText">
+								<h2 type="text" id="dryDays1" >Du har en sensor på detta området.</h2>
+								<h2 type="text" id="rainDays1">För mer information, klicka på en sensor.</h2>
+							</div>
+						</article>
+
+						<article>
+							<a class="thumbnail" href="images/new/valla1.png" data-position="top center"><img src="images/new/valla1.png" alt="" /></a>
+						</article>
+						<article>
+							<a id="hidden" class="thumbnail" href="images/new/valla2.png"><img src="images/new/valla2.png" alt="" /></a>
+							<div class ="infoText">
+								<h2 type="text" id="dryDays1" >Du har två sensor på detta området.</h2>
+								<h2 type="text" id="rainDays1">För mer information, klicka på en sensor.</h2>
 							</div>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/kartor/test1.png" data-position="top center"><img src="images/kartor/test1.png" alt="" /></a>
+							<a class="thumbnail" href="images/new/ulrika1.png" data-position="top center"><img src="images/new/ulrika1.png" alt="" /></a>
 							
-							<h2>Nullam vitae nunc vulputate</h2>
-							<p>In pellentesque cursus velit id posuere. Donec vehicula nulla.</p>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/kartor/test2.png"><img src="images/kartor/test2.png" alt="" /></a>
-							<h2>Phasellus magna faucibus</h2>
-							<p>Nulla dignissim libero maximus tellus varius dictum ut posuere magna.</p>
+							<a id="hidden" class="thumbnail" href="images/new/ulrika2.png"><img src="images/new/ulrika2.png" alt="" /></a>
+							<div class ="infoText">
+								<h2 type="text" id="dryDays1" >Du har tre sensor på detta området.</h2>
+								<h2 type="text" id="rainDays1">För mer information, klicka på en sensor.</h2>
+							</div>
 						</article>
+						<article>
+
+						<article>
+							<a class="thumbnail" href="images/new/trad1.png" data-position="top center"><img src="images/new/trad1.png" alt="" /></a>
+							
+						</article>
+						<article>
+							<a id="hidden" class="thumbnail" href="images/new/trad2.png"><img src="images/new/trad2.png" alt="" /></a>
+							<div class ="infoText">
+								<h2 type="text" id="dryDays1" >Du har en sensor på detta området.</h2>
+								<h2 type="text" id="rainDays1">För mer information, klicka på en sensor.</h2>
+							</div>
+						</article>
+						<article>
 						
 					</section>
 
@@ -142,7 +175,7 @@
 			</div>
 
 			<script>
-			//getArea();
+
 			// getWeather();
 				var color = calculateColor(<?php echo $Current?>, <?php echo $Counter?>, <?php echo $Value ?>);
 				
@@ -151,7 +184,6 @@
 				var green1= "green";
 				var yellow1 = "yellow";
 				var red1 = "red";
-			
 
 			</script>
 

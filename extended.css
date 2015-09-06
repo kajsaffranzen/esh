@@ -1,5 +1,5 @@
 /*@import url(font-awesome.min.css);*/
-/*@import url("https://www.google.com/fonts#ChoosePlace:select/Collection:Josefin+Slab");*/
+@import url("https://www.google.com/fonts#ChoosePlace:select/Collection:Josefin+Slab");
 
 .loginBtn{
 
@@ -43,31 +43,64 @@
 }
 
 
-.sensorType{
+/*.sensorType{
 	height: 7%;
 	/*position: fixed;*/
-	margin-top: 25%;
+	/*margin-bottom: 59%;
 	margin-left: 33%;
+	z-index: -1;
+}*/
+
+.sensorType{   /*green*/
+	height: 3%;
+	/*position: fixed;*/
+	margin-bottom: -12%;
+	margin-left: 23%;
 	z-index: -1;
 }
 
 .sensorType2{
-	height: 7%;
+	height: 3%;
 	/*position: fixed;*/
 	margin-bottom: 32%;	
-	margin-left: 23%;
+	margin-left: 53%;
 	z-index: -1;
 
 }
 
 .sensorType3{
-	height: 7%;
+	height: 3%;
 	/*position: fixed;*/
 	margin-bottom: 2%;	
-	margin-right: 33%;
+	margin-left: 74%;
 	z-index: -1;
 
 }
 
+/*.sensorType2{
+	height: 2%;
+	width: 3%;
+	/*position: fixed;*/
+	/*margin-bottom: 32%;	
+	margin-left: 23%;
+	z-index: -1;*/
+
+/*}
+
+.sensorType3{
+	height: 3%;
+	position: fixed;
+	margin-bottom: 2%;	
+	margin-right: 33%;
+	z-index: -1;
+
+/*}*/
+
+#sensorSize1{
+	width: 13%;
+	height: 20%;
+	margin-bottom: 15%;
+	margin-left: 45%;
+}
 
 
