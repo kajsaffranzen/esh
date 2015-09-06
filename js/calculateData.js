@@ -33,7 +33,8 @@ function calculateColor(current, counter, value){
 
 function sensorResult(color){
 	console.log("i sensorResult: " + theCounter);
-	
+	var rain = weather();
+	console.log(rain);
 	if(color == "green"){
 		// kollar om det är sol snart , 
 		// om det är varmt + sol närmsta 4 dagarna, kolla igenom inom 4 dagar
@@ -83,13 +84,15 @@ function sensorResult(color){
 function weather() {
 	var weather = [false, false, false, false, false, false, false, false, false, true, false];
 
-	var counter = 0;
+	var counter = 10;
 	var test = false;
-	while(test = false) {
+	/*while(test = false) {
 		test = weather[counter];
-		counter++;
+		counter= counter +1;
 
 	}
+	console.log("hoppis" + counter);*/
+
 	return counter;
 
 }
