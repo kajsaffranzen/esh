@@ -10,7 +10,7 @@ function calculateColor(counter, current){
 
 function greenSensor(){
 
-	document.getElementById('dryDays').innerHTML="GRÖN";
+	// document.getElementById('dryDays').innerHTML="GRÖN";
 	// document.getElementById('dryDays').innerHTML=remainingTime.toString();
 
 	console.log("Du behöver ej vattna");
@@ -20,7 +20,7 @@ function greenSensor(){
 function yellowSensor(){
 
 	console.log("Du behöver kanske vattna");
-	document.getElementById('dryDays').innerHTML = "GREEN";
+	// document.getElementById('dryDays').innerHTML = "GREEN";
 	// document.getElementById('dryDays').innerHTML=remainingTime.toString();
 }
 
@@ -41,6 +41,6 @@ function redSensor(){
 	else
 		console.log("Du beövde vattna igår din jävel");
 
-	document.getElementById('dryDays').innerHTML=remainingTime.toString();
+	document.getElementById('dryDays').innerHTML= remainingTime.toString();
 
 }
