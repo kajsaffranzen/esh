@@ -4,11 +4,22 @@ var d = new Date();
 var today = d.getDate(); //return the day
 
 
-function calculateColor(){
+function calculateColor(current, counter, value){
 
 	// ändra src på dropp-bildern
+	if(counter < 5 || current > value){
+	color = "green";
+	}
+	else if(counter >= 5 || counter < 10) {
+	color = "yellow";
+	}
+	else	{
+	 color = "red";
+	}
+	var source = "images/kartor/" + color + ".png";
+	console.log(source);
+	document.getElementById('sensorSize').src = source;
 
-	var color = "green";
 	// return en color
 	return color;
 }
@@ -51,3 +62,5 @@ function redSensor(){
 	document.getElementById('dryDays').innerHTML= remainingTime.toString();
 
 }
+
+

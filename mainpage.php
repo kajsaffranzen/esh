@@ -41,17 +41,15 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![enlldif]-->
 		
-		<script src="js/getData.js"></script>
-		<script src="js/calculateData.js"></script>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<script src="js/getData.js"></script>
+		<script src="js/calculateData.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading-0 is-loading-1 is-loading-2">
 
-		<script>
-			getArea();
-			getWeather();
-		</script>
+		
 
 		<!-- Main -->
 			<div id="main">
@@ -76,8 +74,8 @@
 						</article>
 						<article>
 							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img src="images/kartor/fridhem1.1.png" alt="" /></a>
-							
-								<img id="sensorSize" class="sensorType" src="images/kartor/greenDrop.png" onClick="calculatSensor(color);">
+								
+								<img id="sensorSize" class="sensorType" src="images/kartor/green.png" onClick="sensorResult(color);">
 								<!--img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="yellowSensor();">
 								<img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="redSensor();"-->
 
@@ -147,11 +145,22 @@
 
 			</div>
 
+			<script>
+			//getArea();
+			getWeather();
+			var color = calculateColor(<?php echo $Current?>, <?php echo $Counter?>, <?php echo $Value ?>);
+			
+			console.log(color);
+			
+
+		</script>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+	
 
 	</body>
 
