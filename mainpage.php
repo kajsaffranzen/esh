@@ -73,28 +73,31 @@
 							<a class="thumbnail" href="images/kartor/fridhem1.png" data-position="left center"><img src="images/kartor/fridhem1.png" alt="" /></a>
 						</article>
 						<article>
-							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img src="images/kartor/fridhem1.1.png" alt="" /></a>
-								
+							<a  id="hidden" class="thumbnail" href="images/kartor/fridhem1.1.png"><img id="hidden1" src="images/kartor/fridhem1.1.png" alt="" /></a>
+							
 								<img id="sensorSize" class="sensorType" src="images/kartor/green.png" onClick="sensorResult(color);">
-								<!--img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="yellowSensor();">
-								<img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="redSensor();"-->
+								<!-- <img id="sensorSize" class="sensorType2" src="images/kartor/gul.png" onClick="sensorResult(color);"> -->
+								<!-- <img id="sensorSize" class="sensorType3" src="images/kartor/red.png" onClick="sensorResult(color);"> -->
 
 							<div class ="infoText">
 								<h2 type="text" id="dryDays" >hej</h2>
-								<p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
+								<h2 type="text" id="rainDays"></h2>
 							</div>
 						</article>
+						
 						<!-- Tradgårdsföreningen -->
 						<article>
 							<a class="thumbnail" href="images/kartor/tradgard1.png" data-position="top center"><img src="images/kartor/tradgard1.png" alt="" /></a>
 						</article>
 						<article>
-							<a id="hidden" class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Donec maximus nisi eget</h2>
-							<p>Tristique in nulla vel congue. Sed sociis natoque parturient nascetur.</p>
+							<a id="hidden" class="thumbnail" href="images/kartor/tradgard2.png"><img src="images/kartor/tradgard2.png" alt="" /></a>
+							<div class ="infoText">
+								<h2 type="text" id="dryDays" >hej</h2>
+								<h2 type="text" id="rainDays"></h2>
+							</div>
 						</article>
 						<article>
-							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="calculateColor(5,7)" alt="" /></a>
+							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/06.jpg" alt="" /></a>
 							
 							<h2>Nullam vitae nunc vulputate</h2>
 							<p>In pellentesque cursus velit id posuere. Donec vehicula nulla.</p>
@@ -146,14 +149,15 @@
 			</div>
 
 			<script>
-			//getArea();
-			//getWeather();
-			var color = calculateColor(<?php echo $Current?>, <?php echo $Counter?>, <?php echo $Value ?>);
-			
-			console.log(color);
+
+			// getWeather();
+				var color = calculateColor(<?php echo $Current?>, <?php echo $Counter?>, <?php echo $Value ?>);
+				
+				console.log(color);
+
 			
 
-		</script>
+			</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

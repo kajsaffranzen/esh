@@ -419,7 +419,7 @@ var main = (function($) { var _ = {
 						$thumbnail = $this.children('.thumbnail'),
 						s;
 
-					var urlName = "images/kartor/fridhem1"+.1+".png"
+					// var urlName = "images/kartor/fridhem1"+.1+".png"
 
 					// Slide object.
 						s = {
@@ -659,6 +659,8 @@ var main = (function($) { var _ = {
 			console.log("c: " + c);
 			// console.log("i: " + i);
 			console.log("l: " + l);
+			
+
 			if (c >= l - 1)
 				i = 0;
 			else
